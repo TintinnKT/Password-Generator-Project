@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Gen1</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" disabled>
+                <span class="material-symbols-rounded">copy_all</span>
+                <div class="pass-indicator">
+                    <div class="pass-length">
+                        <div class="details">
+                            <label class="title">Password Length</label>
+                            <span></span>
+                        </div>
+                        <input type="range" min="1" max="24" value="10" step="1">
+                    </div>
+
+                    <div class="pass-settings">
+                        <label class="title">Settings</label>
+                        <ul class="options">
+                            <li class="option">
+                                <input type="checkbox" id="numbers">
+                                <label for="numbers">Number (0-9)</label>
+                            </li>
+                            <li class="option">
+                                <input type="checkbox" id="upper">
+                                <label for="upper">Uppercase (A-Z)</label>
+                            </li>
+                            <li class="option">
+                                <input type="checkbox" id="lower">
+                                <label for="lower">lowercase (A-Z)</label>
+                            </li>
+                            <li class="option">
+                                <input type="checkbox" id="Symbols">
+                                <label for="Symbols">Symbols (Ex. $ & * _)</label>
+                            </li>
+                            <li class="option">
+                                <input type="checkbox" id="exclude-duplicate">
+                                <label for="exclude-duplicate">Exclude Duplicate</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="generate-pw">Generate</button>
+
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>
