@@ -105,6 +105,26 @@ body{
     width: 85%;
 }
 
+input[type=range] {
+    width: 100%;
+    margin: 13.8px 0;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8.4px;
+    background: #ADC;
+    border-radius: 25px;
+    border: none;
+  }
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #2196F3;
+    margin-top: -6.8px;
+  }
+
 .pass-length .details{
     display: flex;
     justify-content: space-between;
