@@ -31,16 +31,16 @@ body{
     color: #BEF;
 }
 
-
+  
 .input-box input{
   width: 85%;
-  height: 25px;
-  color: #FFF;
+  height: 40px;
+  color: #FFE;
   background: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  border-radius: 4px;
-  letter-spacing: 1.2px;
+  border-radius: 9px;
+  letter-spacing: 1.4px;
   border: 2px solid #ACD6DF;
   padding: 1 0.2rem 1 0.2rem; /*mark problems*/
 }

@@ -1,14 +1,15 @@
-const lengthSlider =document.querySelector(".pass-length input")
-const option = document.querySelectorAll(".option input")
-const copyIcon = document.querySelector(".input-box span")
-const passwordInput = document.querySelector(".inout-obx input")
-const generatePW = document.querySelector(".generate-pw")
+const lengthSlider = document.querySelector(".pass-length input");
+const options = document.querySelectorAll(".option input");
+const copyIcon = document.querySelector(".input-box span");
+const passwordInput = document.querySelector(".input-box input");
+const passIndicator = document.querySelector(".pass-indicator");
+const generatePw = document.querySelector(".generate-pw");
 
-const characters ={
-    lowercase: "qwertyuiopasdfghjklzxcvbnm",
-    uppercase: "QWERTYUIOPASDFGHJKLZXCVBNM",
-    number: "0123456789",
-    Symbol: "!@#$%^&*()_+/*-."
+const characters = {
+    lowercase: "abcdefghijklmnopqrstuvwxyz",
+    uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    numbers: "0123456789",
+    symbols: "!$%&|[](){}:;.,*+-#@<>~"
 }
 
 const generatePassword = () => {
@@ -17,7 +18,7 @@ const generatePassword = () => {
         excludeDuplicate = false,
         passLength = lengthSlider.value;
 
-    option.forEach(option => {
+    options.forEach(option => {
         if (option.checked) {
             if (option.id !== "exc-duplicate" && option.id !== "spaces") {
                 staticPassword += characters[option.id];
@@ -62,7 +63,6 @@ const copyPassword = () => {
     }, 1500);
 }
 
-
 copyIcon.addEventListener("click", copyPassword);
-lengthSlider.addEventListener("input",updateSlider);
-generatePW.addEventListener("click", generatePassword);
+lengthSlider.addEventListener("input", updateSlider);
+generatePw.addEventListener("click", generatePassword);
