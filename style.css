@@ -13,6 +13,8 @@ body{
         justify-content: center;
         min-height: 100vh;
         background: #468FAF;
+        width: 100%;
+        padding: 10%;
 }
 
 /* #AA6A78*/
@@ -21,6 +23,7 @@ body{
     background: #012A4A;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(10, 10, 10, 0.5);
+    align-items: center;
 }
 
 .container h2{

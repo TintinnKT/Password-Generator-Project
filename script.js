@@ -27,6 +27,10 @@ const generatePassword = () => {
             } else {
                 excludeDuplicate = true;
             }
+        } else {
+            if (option.id === "exc-duplicate") {
+                excludeDuplicate = false;
+            }
         }
     });
 
@@ -39,11 +43,10 @@ const generatePassword = () => {
         }
     }
     passwordInput.value = randomPassword;
-
 }
 
 const updatePassIndicator = () => {
-    passIndicator.id = lengthSlider.value <= 8 ? "weak" : lengthSlider.value <= 16 ? "medium" : "strong";
+    passIndicator.id = lengthSlider.value <= 6 ? "weak" : lengthSlider.value <= 15 ? "medium" : "strong";
 }
 
 const updateSlider = () => {
