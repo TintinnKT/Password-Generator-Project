@@ -46,7 +46,7 @@ const generatePassword = () => {
 }
 
 const updatePassIndicator = () => {
-    passIndicator.id = lengthSlider.value <= 6 ? "weak" : lengthSlider.value <= 15 ? "medium" : "strong";
+    passIndicator.id = lengthSlider.value <= 5 ? "weak" : lengthSlider.value <= 10 ? "medium" : "strong";
 }
 
 const updateSlider = () => {

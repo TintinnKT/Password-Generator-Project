@@ -14,7 +14,7 @@ body{
         min-height: 100vh;
         background: #468FAF;
         width: 100%;
-        padding: 10%;
+        padding: 8%;
 }
 
 /* #AA6A78*/
@@ -40,7 +40,7 @@ body{
   height: 40px;
   color: #FFE;
   background: none;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 400;
   border-radius: 9px;
   letter-spacing: 1.4px;
@@ -64,7 +64,7 @@ body{
   position: absolute;
   right: 10px;
   cursor: pointer;
-  line-height: 53px;
+  line-height: 45px;
 }
 
 .input-box  span:hover{
@@ -167,7 +167,6 @@ input[type=range]::-webkit-slider-thumb {
 .pass-settings .title{
     color: #90E0EF;
 }
-
 
 .wrapper .generate-pw{
     width: 60%;
